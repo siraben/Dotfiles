@@ -22,7 +22,6 @@
 
 ;;; Code:
 
-(setq debug-on-error t)
 ;; Always prefer the newest version of a file, even if the old one is
 ;; compiled.
 (setq load-prefer-newer t)
@@ -68,7 +67,7 @@
 (require 'siraben-gnus)
 (require 'siraben-shell)
 (require 'siraben-org)
-(require 'siraben-tramp)
+;; (require 'siraben-tramp)
 (require 'siraben-arcadia)
 (require 'siraben-calc)
 (require 'siraben-midnight)
@@ -81,7 +80,7 @@
 
 ;; Initial scratch buffer message.
 (setq initial-scratch-message
-      (format ";; Scratch buffer was created on %s\n"
+      (format ";; Session started on %s\n"
 	      (shell-command-to-string "date '+%A, %B %d, %Y at %R.'")))
 
 ;; Keep some things out of version control.
@@ -106,8 +105,6 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(package-selected-packages
-   (quote
-    (helm-dictionary elm-mode js2-mode yasnippet-snippets xkcd writeroom-mode writegood-mode which-key webpaste use-package svg-clock spaceline slime rainbow-identifiers rainbow-delimiters racket-mode racer proof-general pdf-tools paredit paradox org-wc ob-sml nix-mode neotree multiple-cursors memory-usage mark-multiple magit lorem-ipsum ledger-mode htmlize helm-ag google-c-style gnuplot geiser free-keys forth-mode flycheck-rust flycheck-irony flycheck-haskell fill-column-indicator fancy-battery exec-path-from-shell evil erc-view-log emojify edit-indirect ediprolog diminish demo-it define-word csharp-mode company-irony company-emoji company-coq color-theme-sanityinc-tomorrow cider cargo auto-package-update aggressive-indent))))
+ )
 
 ;;; init.el ends here
