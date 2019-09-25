@@ -153,12 +153,14 @@ let wrapWeb = pkgs.callPackage ./wrapWeb.nix {}; in
       redshift
       rhythmbox
       rofi
+      sbcl
       scrot
       silver-searcher
       smlnj
       stow
       system-config-printer
       texlive.combined.scheme-full
+      tdesktop
       the-powder-toy
       thunderbird
       tldr
