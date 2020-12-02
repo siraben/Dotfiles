@@ -23,6 +23,7 @@ let
       sha256 = "0dq2nc7n4clvxm1592dr1s8d4gqy0pq6z1xlxy1dfmf18hij4k6d";
     })
     { }).package;
+  nixpkgs-update = import sources.nixpkgs-update {};
   linuxPackages = with pkgs; [
     anki
     arc-theme
@@ -115,6 +116,7 @@ let
     nixfmt
     nixpkgs-fmt
     nixpkgs-review
+    nixpkgs-update
     nodePackages.bash-language-server
     nodePackages.javascript-typescript-langserver
     nodePackages.pyright
